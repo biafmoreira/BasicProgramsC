@@ -1,0 +1,24 @@
+/*1. Fazer um programa para
+a. receber do usuário um tempo em segundos, correspondente à duração de um evento
+qualquer (por ex. jogo de futebol)
+b. calcular e mostrar ao usuário o tempo equivalente em horas, minutos e segundos*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+int segundos, horas, minutos, conversao;
+
+ printf ("insira os segundos");
+ scanf ("%d", &segundos);
+
+ minutos = segundos /60;
+ horas = minutos /60;
+
+ printf ("essa eh a conversao: %d horas\n %d minutos \n %d segundos", horas, minutos,segundos);
+
+
+return 0;
+}
+
