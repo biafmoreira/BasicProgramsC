@@ -1,0 +1,21 @@
+/*2. Fazer um programa para receber 3 valores inteiros do usuário e mostrar a sua média (que
+pode não ser inteira).*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main (){
+   int num1, num2, num3;
+   float media;
+
+   printf ("insira tres numeros inteiros: ");
+   scanf ("%d%d%d", &num1, &num2, &num3);
+
+   media = (num1 + num2 + num3)/3;
+
+   printf("esse eh o resultado da media:%2.f", media);
+
+return 0;
+
+}
