@@ -1,0 +1,24 @@
+- Código da peça
+- Preço unitário da peça
+- Quantidade vendida
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+ int main (){
+   char nome[20];
+   int codigpec,quantven;
+   float preco, comissao;
+
+   printf ("insira seu nome: \n o codigo da peca: \n preco unitario da peca:\n quantidade vendida:\n");
+   scanf ("%s %d %f %d", &nome, &codigpec,&preco,&quantven);
+
+   comissao = 0.05* (preco * quantven);
+
+   printf("nome: %s\n comissa: %2.f", nome, comissao);
+
+
+ return 0;
+ }
