@@ -1,0 +1,23 @@
+/*Faça um programa que:
+- Leia a cotação do dólar
+- Leia um valor em dólares
+- Converta esse valor para Real
+- Mostre o resultado*/
+
+#include <stdio.h>
+#include <math.h>
+
+ int main (){
+
+  float cot_dolar, valor_dolar, conver;
+
+    printf ("insira o valor atual do dolar:\n insira o valor que quer converter:\n");
+    scanf ("%f %f", &cot_dolar , &valor_dolar);
+
+    conver = (cot_dolar * valor_dolar);
+
+    printf ("conver: %.2f", conver);
+
+
+ return 0;
+ }
