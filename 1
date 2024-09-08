@@ -1,0 +1,19 @@
+/* Faça um programa para calcular o estoque médio de uma peça, sendo que:
+ESTOQUE MÉDIO = (QUANTIDADE_MÍNIMA + QUANTIDADE_MÁXIMA) / 2 */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+   int quantidade_minima, quantidade_maxima, estoquemed;
+
+    printf ("insira a quantidade minima e maxima do seu estoque: \n ");
+    scanf ("%d %d", &quantidade_minima, &quantidade_maxima);
+
+    estoquemed = (quantidade_minima + quantidade_maxima)/2;
+
+    printf ("esse é o estoque medido da sua peca: %d ", estoquemed);
+
+
+return 0;
+}
