@@ -1,0 +1,29 @@
+//print your name, date of birth, and mobile number.
+
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+   char name[50];
+   int day, month, year;
+ long int mobile_number;
+
+   printf ("what is your name:");
+   scanf ("%s", &name);
+
+   printf ("your birth date (day, month, year):");
+   scanf ("%d %d %d", &day,&month,&year);
+
+   printf ("enter your mobile number: ");
+   scanf ("%ld", &mobile_number);
+
+ printf("\nYour information:\n");
+    printf("Name: %s\n",name);
+    printf("Birthdate: %d/%d/%d\n", day, month, year);
+    printf("Mobile Number: %d\n", mobile_number);
+
+
+return 0;
+}
+
+
