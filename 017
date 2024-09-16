@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// classificação de notas
+
+int main (){
+    int nota;
+
+    printf ("insira a nota:\n");
+    scanf ("%d", &nota);
+
+      if (nota > 100 || nota < 0 ){
+         printf ("opcao invalida\n", nota);
+      } else if (nota >= 90){
+         printf ("A\n", nota);
+      } else if (nota >= 80){
+         printf ("B\n", nota);
+      } else if (nota >= 70){
+         printf ("C\n", nota);
+      } else if (nota >= 60){
+        printf ("D\n", nota);
+      } else {
+        printf ("F\n", nota);
+      }
+
+    return 0;
+}
