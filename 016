@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Crie um programa em C que leia um número inteiro e verifique se ele é positivo, negativo ou zero.
+
+int main (){
+    int num;
+
+    printf ("insira um numero inteiro: ");
+    scanf ("%d", &num);
+
+    if (num > 0){
+        printf ("%d: positivo", num);
+    } else if (num < 0){
+        printf ("%d: negativo", num);
+        } if (num == 0){
+            printf ("%d: zero", num);
+        }
+
+return 0;
+}
