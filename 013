@@ -1,0 +1,24 @@
+/*As maçãs custam R$ 0,30 cada se forem compradas menos do que uma
+dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um
+programa que leia o número de maçãs compradas, calcule e escreva o
+valor total da compra.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    float macas, descont;
+
+    printf ("insira quantas macas foram compradas: ");
+    scanf ("%f", &macas);
+
+    if (macas >= 12 ){
+         descont = (0.25 * macas);
+            printf ("esse eh o valor total da compra: %f\n", descont);
+
+          } else{
+                descont = (0.30 * macas);
+                  printf ("esse eh o valor total da compra: %.2f\n", descont);
+                  }
+return 0;
+}
