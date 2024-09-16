@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    float valor_compra, descont;
+
+    printf ("insira o valor da compra:\n");
+    scanf ("%f", &valor_compra);
+
+    if (valor_compra >= 1000.00){
+     descont = (valor_compra * 0.2);
+     valor_compra = valor_compra - descont; // ou valor_compra -= descont
+    } else if (valor_compra >= 500.01){
+     descont = (valor_compra * 0.1);
+     valor_compra = valor_compra - descont; // ou valor_compra -= descont
+    } else {
+      printf ("voce nao tem desconto\n");
+      }
+
+      printf ("esse eh o valor total da compra: %.2f\n", valor_compra);
+    return 0;
+}
