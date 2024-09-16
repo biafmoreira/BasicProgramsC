@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    int idade;
+    float tarifa, valor_a_pagar;
+
+    printf ("insira a idade:\n");
+    scanf ("%d", &idade);
+    printf ("insira o valor inteiro da tarifa:\n");
+    scanf ("%f",&tarifa);
+
+    if (idade <= 5){
+       valor_a_pagar = 0;
+       } else if (idade >= 65){
+      valor_a_pagar = (tarifa * 0.5);
+       } else if (idade >= 6 && idade <= 12){
+      valor_a_pagar = (tarifa * 0.5);
+      } else {
+        valor_a_pagar = tarifa;
+      }
+    printf ("esse eh o valor total a ser pago: %.2f", valor_a_pagar);
+
+return 0;
+}
