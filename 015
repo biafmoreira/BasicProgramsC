@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// esse programa é capaz de dizer se um número é ímpar ou par
+
+int main (){
+    int num;
+
+  printf ("insira um numero inteiro: ");
+  scanf ("%d", &num);
+
+  if (num % 2 == 0){
+    printf ("esse numero: %d, eh par", num);
+  } else {
+      printf ("esse numero: %d, eh impar", num);
+      }
+
+return 0;
+}
