@@ -1,0 +1,36 @@
+/*Tendo como entrada a altura e o sexo (codificado da seguinte forma:
+1:feminino 2:masculino) de uma pessoa, construa um programa que
+calcule e imprima seu peso ideal, utilizando as seguintes
+Fórmulas:
+- para homens: (62.1 * Altura) – 44.7
+- para mulheres: (72.7 * Altura) – 58.0*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    float alt, peso;
+    int genero;
+
+    // leitura do sexo da pessoa
+    printf ("insira 1: feminino ou insira 2: masculino\n");
+    scanf ("%d",&genero);
+
+    // leitura da altura da pessoa
+    printf ("insira a sua altura em metros:\n");
+    scanf ("%f", &alt);
+
+    if (genero == 1){
+        printf ("feminino\n");
+        //formula para mulheres
+          peso = ((62.1 * alt) - 44.7);
+             printf ("esse eh seu peso ideal: %.2f kg\n", peso);
+   } else if (genero == 2){
+        printf ("masculino\n");
+        //formula para homens
+         peso = ((72.7 * alt) - 58.0);
+             printf ("esse eh seu peso ideal: %.2f kg\n", peso);
+     } else{
+        printf ("opcao invalida\n");
+      }
+return 0;
+}
