@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*Escreva um programa para ler o ano de nascimento de uma pessoa e
+escrever uma mensagem que diga se ela poderá ou não votar este ano
+(não é necessário considerar o mês em que ela nasceu).*/
+
+int main (){
+
+    int ano;
+
+    printf ("Qual a data do seu nascimento:\n");
+    scanf ("%d", &ano);
+
+    if (ano > 2005) //com base no ano 2023
+      printf ("VOCE NAO PRECISA VOTAR");
+    else
+      printf ("VOCE PRECISA VOTAR");
+
+
+return 0;}
