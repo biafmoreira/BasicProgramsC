@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+   int idade;
+
+   printf ("insira sua idade: ");
+   scanf ("%d", &idade);
+
+   if (idade >= 18 && idade <= 67)
+    printf ("pode doar sangue");
+   else
+    printf ("não pode doar sangue");
+
+return 0;
+}
