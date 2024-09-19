@@ -1,0 +1,27 @@
+//desconto progressivo
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+    float valor_compra, desconto;
+
+    printf ("Qual foi o valor total da sua compra:\n");
+    scanf ("%f", &valor_compra);
+
+    if (valor_compra < 100)
+        printf ("Sem desconto");
+    else if (valor_compra >= 100 && valor_compra <= 500){
+        desconto = valor_compra * 0.1;
+        valor_compra = valor_compra - desconto;
+        printf ("Voce possui 10%, sua compra ficou no total de: %.2f", valor_compra);
+    }
+    else {
+        desconto = valor_compra * 0.2;
+        valor_compra = valor_compra - desconto;
+        printf ("Voce possui 20%, sua compra ficou no total de: %.2f", valor_compra);
+    }
+
+return 0;
+}
