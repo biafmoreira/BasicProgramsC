@@ -1,0 +1,46 @@
+//Caluladora avançada
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+    int opcao;
+    int n1, n2;
+    float calculo = 0;
+
+    printf ("Adicione dois numeros:\n");
+    scanf ("%d %d", &n1, &n2);
+
+    printf ("Escolha uma operacao:\n1-Adicao\n2-Subtracao\n3-Multiplicacao\n4-Divisao\n5-Modulo(resto da divisao)\n");
+    scanf ("%d", &opcao);
+
+    switch (opcao){
+
+case 1:
+      calculo = (n1 + n2);
+      printf ("Soma:%.2f", calculo);
+      break;
+case 2:
+      calculo = (n1 - n2);
+      printf ("Subtracao:%.2f", calculo);
+      break;
+case 3:
+      calculo = (n1 * n2);
+      printf ("Multiplicacao:%.2f", calculo);
+      break;
+case 4:
+      calculo = (n1 / n2);
+      printf ("Divisao:%.2f", calculo);
+      break;
+case 5:
+     calculo = (n1 % n2);
+     printf ("Resto da divisao: %.2f", calculo);
+     break;
+default:
+     printf ("Opcao Invalida");
+    }
+
+return 0;
+}
+
