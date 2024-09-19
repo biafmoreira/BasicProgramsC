@@ -1,0 +1,26 @@
+// classificação de velocidade
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    int veloc;
+
+    printf ("Adicione a velocidade me Km/h:\n");
+    scanf ("%d", &veloc);
+
+    if (veloc < 40)
+    printf ("Muito lento");
+
+    else if (veloc >= 40 && veloc <= 60)
+    printf ("Moderado");
+
+    else if (veloc >= 61 && veloc <= 100)
+    printf ("Rapido");
+
+    else
+        printf ("Muito rapido");
+
+return 0;
+}
+
