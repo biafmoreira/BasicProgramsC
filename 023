@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+ int opcao;
+
+   printf ("Eescolha uma opcao:\n 1-Acessar arquivo\n 2-Analisar arquivo\n 3-Fechar arquivo\n");
+   scanf ("%d", &opcao);
+
+   switch (opcao){
+   case 1:
+      printf ("Acessando arquivo...");
+      break;
+
+   case 2:
+      printf ("Analisando arquivo...");
+      break;
+
+   case 3:
+      printf ("Fechando arquivo...");
+      break;
+   default:
+      printf ("Opcao invalida!");
+   }
+
+return 0;
+}
