@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+    float val1, val2, m_ponderada, m_aritimetica;
+    int media;
+
+    printf ("digite o valores das duas notas:\n");
+    scanf ("%f %f", &val1, &val2);
+
+    printf ("1- media ponderada\n 2- media aritimetica\n");
+    scanf ("%d", &media);
+
+switch (media){
+case 1:
+    m_ponderada = ((2 * val1) + (3* val2)) /5;
+    printf ("media ponderada: %.2f", m_ponderada);
+    break;
+
+case 2:
+    m_aritimetica = ((val1 + val2)/2);
+    printf ("media aritimetica: %.2f", m_aritimetica);
+    break;
+default:
+    printf ("Opcao Invalida!");
+    }
+
+
+return 0;
+}
