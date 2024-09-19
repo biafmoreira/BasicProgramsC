@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+     int num;
+
+  printf ("digite um numero:\n");
+  scanf ("%d", &num);
+
+   if (num % 2 == 0)
+    printf ("eh divisivel por 2\n");
+
+   if (num % 3 == 0)
+    printf ("eh divisivel por 3\n");
+
+   if (num % 5 == 0)
+    printf ("eh divisivel por 5\n");
+
+    else
+        printf ("nao eh divisivel");
+
+return 0;
+}
