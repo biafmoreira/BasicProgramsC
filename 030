@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+     int opcao;
+     float valor, conversao=0;
+
+     printf ("Insira o valor a ser convertido:\n");
+     scanf (" %f", &valor);
+
+     printf ("Conversao cambial:\n 1- de Real para Dolar\n 2- de Dolar para Real\n");
+     scanf (" %d", &opcao);
+
+switch (opcao){
+case 1:
+    conversao = (valor * 0.18);
+    printf ("Real para Dolar: %.2f", conversao);
+    break;
+
+case 2:
+    conversao = (valor * 5.43);
+    printf ("Dolar para Real: %.2f", conversao);
+    break;
+
+default:
+    printf ("opcao invalida!");
+    break;
+}
+
+return 0;
+}
