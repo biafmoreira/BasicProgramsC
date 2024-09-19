@@ -1,0 +1,29 @@
+//verificação de paridade e positividade
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+   int num, par, impar;
+
+   printf ("Insira um numero: ");
+   scanf ("%d", &num);
+
+   if (num < 0 && num % 2 == 0)
+    printf ("Negativo e Par");
+
+   else if (num > 0 && num % 2 == 0)
+    printf ("Positivo e Par");
+
+   else if (num < 0 && num % 2 != 0)
+    printf ("Negativo e Impar");
+
+   else if (num > 0 && num % 2 != 0)
+    printf ("Positivo e Impar");
+
+   else
+    printf ("Zero");
+
+return 0;
+}
+
