@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+   int num, dig1, dig2, dig3, dig4, dig5, qnt_par=0;
+
+      printf ("insira um numero de até 5 dígitos: ");
+      scanf ("%d", &num);
+      
+//verifica o primeiro dígito
+      dig1 = num % 10; //pega o ultimo numero
+      if (dig1 % 2 == 0){
+        qnt_par++;
+      }
+      num = num / 10; //remove o ultimo número
+//verifica o segundo dígito
+      dig2 = num % 10;
+      if (dig2 % 2 == 0){
+        qnt_par++;
+      }
+      num = num / 10;
+//verifica o terceiro dígito
+      dig3 = num % 10;
+      if (dig3 % 2 == 0){
+        qnt_par++;
+      }
+      num = num / 10;
+//verifica o quarto dígito
+      dig4 = num % 10;
+      if (dig4 % 2 == 0){
+        qnt_par++;
+      }
+      num = num / 10;
+//verifica o quinto dígito
+      dig5 = num % 10;
+      if (dig5 % 2 == 0){
+        qnt_par++; // No último dígito, não é necessário remover nenhum número, então não usamos 'num = num / 10' por motivos óbvios hehe.
+      }
+      
+      printf ("Qnt de dígitos pares do seu numero: %d", qnt_par);
+
+    return 0;
+}
