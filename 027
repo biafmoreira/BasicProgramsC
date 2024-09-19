@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main (){
+  char L1, L2, L3, L4, L5, qnt_vogais=0;
+
+    printf ("insira uma palavra de até 5 letras: ");
+    scanf (" %c %c %c %c %c", &L1, &L2, &L3, &L4, &L5);
+
+ L1 = tolower(L1);
+ L2 = tolower(L2);
+ L3 = tolower(L3);
+ L4 = tolower(L4);
+ L5 = tolower(L5);
+
+ //verificar se a letra é vogal
+
+ if (L1 == 'a' || L1 == 'e' ||L1 == 'i' || L1 == 'o' || L1 == 'u')
+ qnt_vogais++;
+
+ if (L2 == 'a' || L2 == 'e' ||L2 == 'i' || L2 == 'o' || L2 == 'u')
+ qnt_vogais++;
+
+ if (L3 == 'a' || L3 == 'e' ||L3 == 'i' || L3 == 'o' || L3 == 'u')
+ qnt_vogais++;
+
+ if (L4 == 'a' || L4 == 'e' ||L4 == 'i' || L4 == 'o' || L4 == 'u')
+ qnt_vogais++;
+
+ if (L5 == 'a' || L5 == 'e' ||L5 == 'i' || L5 == 'o' || L5 == 'u')
+ qnt_vogais++;
+
+ printf ("Qnt de vogais nessa palavra: %d", qnt_vogais);
+
+return 0;
+}
