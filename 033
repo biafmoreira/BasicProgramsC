@@ -1,0 +1,22 @@
+//classificação de temperatura
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    int temp;
+
+    printf ("Insira a temperatura em Celsius:\n");
+    scanf ("%d", &temp);
+
+    if (temp < 0)
+        printf ("Congelante");
+    else if (temp >= 0 && temp <= 15)
+        printf ("Frio");
+    else if (temp >= 16 && temp <= 30)
+        printf ("Agradavel");
+    else
+        printf ("Quente");
+
+return 0;
+}
