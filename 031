@@ -1,0 +1,39 @@
+//Dado o número do mês, diga quantos dias têm esse mês
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+    int mes;
+
+    printf ("insira o numero do mes para saber a qnt de dias: \n");
+    scanf ("%d", &mes);
+
+switch (mes){
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+    printf ("O mes possui 31 dias!");
+    break;
+
+case 2:
+    printf ("o mes possui 28 dias!");
+    break;
+
+case 4:
+case 6:
+case 9:
+case 11:
+     printf ("O mes possui 30 dias!");
+     break;
+
+default:
+printf("Opcao Invalida!!!");
+}
+
+return 0;
+}
