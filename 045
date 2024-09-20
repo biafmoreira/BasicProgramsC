@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    int n, i,num,positivos=0, soma = 0;
+
+    printf ("Insira qnts numeros que vc quer que seja lido:\N");
+    scanf ("%d", &n);
+
+    for (i=1; i<=n; i++){
+     printf ("Insira um numero:\n");
+     scanf ("%d", &num);
+
+     if (num > 0){
+        positivos = positivos + 1;
+        soma = soma + num; /*A razão para a variável soma estar dentro do bloco do if é que você só quer somar os números que são positivos. Se você colocar a linha soma = soma + num fora do if, o programa vai somar todos os números, independentemente de serem positivos, negativos ou zero.*/
+     }
+    }
+     printf ("Soma dos números positivos: %d\n", soma);
+
+  return 0;
+}
+
