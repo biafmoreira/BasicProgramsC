@@ -1,0 +1,26 @@
+//Sistema de verificação de cadastro
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    int idade;
+    float salario;
+
+    printf ("Qual sua idade:\n");
+    scanf ("%d", &idade);
+
+    printf ("Qual seu salario:\n");
+    scanf ("%f", &salario);
+
+    if (idade <=18)
+        printf ("Cadastro recusado");
+    else if (idade > 18 && salario > 1500)
+        printf ("Cadastro aprovado");
+    else if( idade > 40 && salario > 1200)
+        printf ("Cadastro aprovado");
+       else
+            printf ("Salario recusado");
+
+return 0;
+}
