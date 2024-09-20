@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    int r, n,i,num, maior=0, menor_igual=0;
+
+    printf ("Insira um valor de referencia:\n");
+    scanf ("%d",&r);
+
+    printf ("Quantos numeros voce quer que o programa leia?:\n");
+    scanf ("%d",&n);
+
+    for (i=1; i<=n; i++){
+        printf ("Insira o numero:\n");
+        scanf ("%d",&num);
+
+        if (num > r){
+         maior = maior + 1;
+        }
+        else if (num <= r){
+         menor_igual = menor_igual + 1;
+        }
+    }
+
+    printf ("Maiores que %d: %d\n Menores ou iguais a %d: %d",r, maior,r, menor_igual);
+
+  return 0;
+}
+
