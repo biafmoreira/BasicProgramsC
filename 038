@@ -1,0 +1,50 @@
+//simulador de jogo de vida
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+  int opcao, vida=50;
+
+   printf ("Faça sua escolha:\n1-Comer\n2-Dormir\n3-Lutar contra um monstro\n4-Usar uma pocao de cura\n");
+   scanf ("%d", &opcao);
+
+   switch (opcao){
+
+   case 1:
+       vida = vida + 10;
+       printf ("Vida: %d", vida);
+       break;
+   case 2:
+       vida = vida + 5;
+       printf ("Vida: %d", vida);
+       break;
+   case 3:
+       vida = vida - 20;
+       printf ("Vida: %d", vida);
+       break;
+   case 4:
+       vida = vida + 15;
+       printf ("Vida: %d", vida);
+       break;
+   default:
+       printf ("Opcao Invalida!\n");
+}
+
+      printf ("\nQuantos pontos voce possui:\n");
+      scanf ("%d", &vida);
+
+    if (vida < 0){
+       vida = 0;
+       printf ("\nVida ajustada para 0\n");
+    }
+    else if (vida > 100){
+        vida = 100;
+        printf ("\nVida ajustada para 100\n");
+    }
+
+    printf ("\nVida atual: %d", vida);
+    
+return 0;
+}
