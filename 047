@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+     int linhas,i, j;
+
+     printf ("linhas:\n");
+     scanf ("%d", &linhas);
+
+      for (i=1; i<=linhas; i++){
+          for (j = 4; j>= i; j--){
+            printf ("*");
+          }
+
+          printf ("\n");
+
+      }
+
+    return 0;
