@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int maior (int num1, int num2){
+    if (num1 > num2)
+       return num1;
+    else
+       return num2;
+}
+
+int main (){
+    int num1, num2, m;
+    printf ("insira dois números:");
+    scanf ("%d %d", &num1, &num2);
+    
+    m = maior(num1, num2);
+    
+    printf ("esse números é o maior: %d", m);
+}
