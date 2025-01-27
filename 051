@@ -12,4 +12,6 @@ int main (){
     SOMA = soma (num1, num2);
     
     printf ("Esse é o resultado: %d", SOMA);
+
+return 0;
 }
