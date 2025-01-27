@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int soma (int num1, int num2){
+    return num1 + num2;
+}
+
+int main (){
+    int num1, num2, SOMA; 
+     printf ("Insira dois números: ");
+     scanf ("%d %d", &num1, &num2);
+    
+    SOMA = soma (num1, num2);
+    
+    printf ("Esse é o resultado: %d", SOMA);
+}
