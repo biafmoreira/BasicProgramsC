@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (){
+
+int linha;
+int estrela;
+
+for (linha = 1; linha <= 5; linha++){
+ for (estrela = 5; estrela >= linha; estrela-- )
+   printf ("★");
+   printf ("\n");
+}
+ 
+    return 0; 
+}
