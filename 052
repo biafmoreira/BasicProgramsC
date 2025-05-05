@@ -1,0 +1,15 @@
+int main (){
+    
+    int num, tabuada, resultado;
+    
+    printf ("Insira o número desejado:\n");
+    scanf("%d", &num);
+    
+    for (tabuada = 1; tabuada <= 10; tabuada++ ){
+        resultado = num * tabuada;
+     printf ("%d x %d = %d\n", num, tabuada, resultado);
+        
+    }
+    
+    return 0;
+}
