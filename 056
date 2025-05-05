@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (){
+
+int linha;
+int num;
+
+for (linha = 1; linha <= 5; linha++){
+  for (num = 1; num <= linha; num++ ){
+       printf ("%d", num);
+ }
+ 
+ printf ("\n");
+}
+    return 0; 
+}
